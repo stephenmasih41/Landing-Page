@@ -4,22 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QuickBites</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header id="header">
-    <img src="./photos/image-1.jpg" alt="Food Image">
-    <nav id="nav-bar">
+        <nav id="nav-bar">
       <ul>
-        <li class="nav-link"><a href=""></a></li>
-        <li class="nav-link"><a href=""></a></li>
-        <li class="nav-link"><a href=""></a></li>
+        <li><a href="#services"  class="nav-link">Services</a></li>
+        <li><a href="#local"  class="nav-link">Local</a></li>
+        <li><a href="#video"  class="nav-link">Video</a></li>
       </ul>
     </nav>
+    <div class="hero">
+      <img src="./photos/logo-png.png" alt="Food Image" id="header-img">
+    </div>
+    <div >
+     <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+        <input type="email" name="email" id="email" placeholder="Write your email here" required>
+        <input type="submit" value="Submit" id="submit">
+      </form>
+      </div>
   </header>
-  <iframe src="video/1908426-uhd_3840_2160_25fps.mp4" id="video"></iframe>
-  <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
-    <input type="email" name="" id="email" placeholder="Write your email here" required>
-    <input type="submit" value="" id="submit">
-  </form>
+  <main class="main" id="services">
+  <div class="middle">
+    <div class="photo-container">
+    <img class="img-container" src="photos/vector-1.png">
+    </div>
+    <div class="img-text">
+    <h2>Become a Driver</h2>
+    <p>As a delivery driver, make money and work on your schedule. Sign up in minutes.</p>
+    </div>
+  </div>
+  <div class="middle">
+    <div class="photo-container">
+    <img class="img-container" src="photos/vector-2.png">
+    </div>
+    <div class="img-text">
+    <h2>Become a Merchant</h2>
+    <p>Attract new customers and grow sales, starting with 0% commissions for up to 30 days.</p>
+    </div>
+  </div>
+  <div class="middle">
+    <div class="photo-container">
+    <img src="photos/vector-3.png" class="img-container"/>
+    </div>
+    <div class="img-text">
+    <h2>Get the best QuickBites experience</h2>
+    <p>Get the best QuickBites experience with live order tracking.</p>
+    </div>
+  </div>
+ </main>
+  <div class="local" id="local">
+    <div class="local-text">
+      <h3>Everything you crave, delivered.</h3>
+      <h5>Your favorite local restaurants</h5>
+      <p>Get a slice of pizza or the whole pie delivered, or pick up house lo mein from the Chinese takeout spot you've been meaning to try.</p>
+      <button class="button">Find restaurants</button>
+    </div>
+    <div class="local-image">
+      <img src="photos/image-2.jpg" alt="Spaghetti">
+    </div>
+  </div>
 </body>
 </html>
